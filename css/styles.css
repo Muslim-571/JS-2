@@ -1,3 +1,16 @@
+/* allerta-regular - latin */
+@font-face {
+    font-family: 'Allerta';
+    font-style: normal;
+    font-weight: 400;
+    font-style: swap;
+    src: local(''),
+        url('../fonts/allerta-v16-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/allerta-v16-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 *,
 *::before,
 *::after {
@@ -10,6 +23,7 @@ ul,
 ol,
 li {
     margin: 0;
+    padding: 0;
     list-style: none;
     list-style-type: none;
 }
@@ -29,7 +43,7 @@ body {
     min-width: 320px;
     display: flex;
     flex-direction: column;
-    font-family: 'Public Sans', 'DM Serif Display';
+    font-family: 'Allerta';
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -40,6 +54,11 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     overflow-x: hidden;
+    background-image: url('../images/dollar__currency.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -57,4 +76,68 @@ body {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.hero__first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.hero__input {
+    padding: 13px 70px 13px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.hero__input-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero__label {
+    padding: 10px 40px 10px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 15px;
+    background-color: skyblue;
+
+}
+
+.hero__main-select {
+    transform: translateX(-10px);
+    padding: 10px 120px 12px 10px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 15px;
+}
+
+.hero__btn {
+    background-color: lightgreen;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 250, 154, 0.3) 0px 0px 0px 3px;
+    transition: 40ms ease;
+    color: black
+}
+
+.hero__btn:active {
+    background: none;
+    transition: 40ms ease;
+    color: lightgreen;
+    box-shadow: rgba(0, 250, 154, 0.3) 0px 0px 0px 3px;
+}
+
+.hero__input-result {
+    margin-top: 200px;
+    margin-left: 350PX;
+    padding: 10px 150px 12px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <title>Document</title>
 </head>
 
@@ -17,7 +17,23 @@
     </header>
     <main>
         <section class="hero">
-
+            <div class="container hero__container">
+                <form class="hero__first" action="https://echo.htmlacademy.ru/" method="get">
+                    <input class="hero__input" value="" placeholder="Enter your ballance" min="0" step="0.01" required
+                        max="99999999">
+                    <div class="hero__input-second">
+                        <label class="hero__label" for="">OPTION</label>
+                        <select class="hero__main-select" name="" id="">
+                            <option hidden disabled selected value="CHOOSE..">CHOOSE..</option>
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                        <button class="hero__btn" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+                <input class="hero__input-result" type="text" placeholder="RESULT:">
+            </div>
         </section>
     </main>
     <footer class="footer">
